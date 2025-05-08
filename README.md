@@ -17,7 +17,7 @@ npm install
 
 Isso irá instalar todas as dependências para o projeto.
 
-## 1 -Hello World
+## 1 - Hello World
 
 Executar os comandos de terminal:
 
