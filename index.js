@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+// roteamentos
+const router = require('./routes/router')
+
 /* Definie o local onde estão localizadas as views do projeto */
 app.set('views', 'views')
 /* Define o template engine que será utilizado para renderizar as views */
@@ -16,21 +19,7 @@ o valor verdadeiro indica que o body-parser vai aceitar objetos aninhados ou qua
 */
 app.use(express.urlencoded({ extended: false }))
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
-
-app.post('/ola', (req, res) => {
-    // req.body é um objeto que contém os dados enviados no corpo da requisição
-    nome = req.body.nome // recupera o valor do parametro com chave = nome
-    /* renderiza a view ola_resposta.ejs e passa o valor do nome através do contexto
-    que é um objeto javascript que contém as variáveis que serão utilizadas na view */
-    res.render('ola_resposta', { nome: nome }) 
-})
-
-app.get('/ola_form', (req, res) => {
-    res.render('ola_form')
-})
+app.use('/', router)
 
 app.listen(port, () => {
     console.log(`Example app listening on http://localhost:${port}`)
