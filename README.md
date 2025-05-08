@@ -74,7 +74,7 @@ A partir de agora para iniciar o projeto iremos utilizar o comando
 npm start
 ```
 
-## 2 -  - Tratamento de requisições com parâmetros
+## 2 - Tratamento de requisições com parâmetros
 
 1. Criar uma nova função para tratamento de requisiçoes do tipo post com parâmetro.
 Criar a função no arquivo index.js logo abaixo da função para requisição do hello world!
