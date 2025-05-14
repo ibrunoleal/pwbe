@@ -2,20 +2,32 @@ const express = require('express')
 const router = express.Router()
 
 
-router.get('/', (req, res) => {
-    res.send('Hello World!')
+/* ----- funções de roteamento ----- */
+router.get('/', function (req, res) {
+  res.render('pages/home',
+    {
+      title: 'Home',
+      paginaAtiva: 'home'
+    }
+  );
+});
+
+router.get('/nova_operacao', function (req, res) {
+  res.render('pages/nova_operacao',
+    {
+      title: 'Nova Operação',
+      paginaAtiva: 'operacao'
+    }
+  );
 })
 
-router.post('/ola', (req, res) => {
-    // req.body é um objeto que contém os dados enviados no corpo da requisição
-    nome = req.body.nome // recupera o valor do parametro com chave = nome
-    /* renderiza a view ola_resposta.ejs e passa o valor do nome através do contexto
-    que é um objeto javascript que contém as variáveis que serão utilizadas na view */
-    res.render('ola_resposta', { nome: nome }) 
-})
-
-router.get('/ola_form', (req, res) => {
-    res.render('ola_form')
+router.get('/operacoes', function (req, res) {
+  res.render('pages/operacoes',
+    {
+      title: 'Operações',
+      paginaAtiva: 'operacao'
+    }
+  );
 })
 
 
