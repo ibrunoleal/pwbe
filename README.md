@@ -733,6 +733,7 @@ input[type=submit]:hover {
     <link rel="stylesheet" href="/stylesheets/operacoes-style.css">
     <link rel="stylesheet" href="/stylesheets/component-style.css">
     <link rel="stylesheet" href="/stylesheets/table-style.css">
+    <link rel="stylesheet" href="/stylesheets/form-style.css">
 </head>
 
 <body>
