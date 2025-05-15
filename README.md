@@ -963,3 +963,9 @@ Ao fim desta etapa o projeto estará com a seguinte estrutura.
 ### 7.1 Exercício
 
 "Baixar" essa versão do projeto e na view de listagem de operações, criar um formulário com um único campo para realizar a busca de operações pelo código do ativo. Utilize a mesma view de listagem de operações para exibir o resultado da pesquisa.
+
+## 8 - Models
+
+1. Criar a pasta 'models' no nível raiz do projeto e, nesta pasta, criar o arquivo 'operacao.js' para o modelo de uma operação.
+
+2. 
