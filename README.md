@@ -844,3 +844,6 @@ O projeto deve estar com a estrutura abaixo até aqui.
  ┣ 📜index.js
  ┣ 📜package.json
 ```
+
+## 7 - Controladores
+
