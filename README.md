@@ -338,6 +338,18 @@ Exemplo: para inserir (de maneira externa) o arquivo "hello.css" localizado em "
 
 ## 6 - Template Layouts
 
+Instalando a dependência.
+
+```bash
+npm install express-ejs-layouts
+```
+
+Importar e definir a utilização no arquivo 'index.js'
+
+```javascript
+const expressLayouts = require('express-ejs-layouts')
+``´
+
 Antes de começar, vamos remover os seguintes arquivos para começar um novo exemplo com um projeto "zerado":
 
 <div>
