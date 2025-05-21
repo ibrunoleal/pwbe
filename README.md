@@ -125,3 +125,5 @@ Operacao.prototype.validate = function () {
 }
 
 ```
+
+5. Testar o projeto com a inserção de novas operações, testando valores válidos e inválidos.
