@@ -109,7 +109,7 @@ Operacao.prototype.validate = function () {
 		const valorBruto = this.data.preco * this.data.quantidade;
 		const taxasB3 = valorBruto * 0.0003; // 0.03% de taxa B3
 		const valorLiquido = this.data.tipoDeOperacao === 'compra' ? (valorBruto + taxasB3) : (valorBruto - taxasB3);
-		// limpando os dados desnessários ou extras que tenham vindo na requisição.
+		// limpando os dados desnessários ou extras que tenham vindo na requisição e adicionando valores derivados.
 		validatedData = {
 			data: data,
 			ativo: ativo,
