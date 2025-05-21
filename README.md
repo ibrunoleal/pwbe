@@ -61,7 +61,7 @@ Em seguida direcione a ação (action) do formulário para a função de respost
 </html>
 ```
 
-6. Criar uma função para tratar a requisição do tipo GET para renderizar a view do formulário.
+6. Criar uma função para tratar a requisição do tipo GET para renderizar a view do formulário no arquivo 'index.js'.
 
 ```javascript
 app.get('/ola_form', (req, res) => {
@@ -73,7 +73,7 @@ app.get('/ola_form', (req, res) => {
 
 [http://localhost:3000/ola_form](http://localhost:3000/ola_form)
 
-8. Melhorando a resposta com um template. Criar um novo template EJS com o nome "ola_resposta.ejs" na pasta "views" para responder um olá persnalizado ao visitante.
+8. Melhorando a resposta com um template. Criar um novo template EJS com o nome 'ola_resposta.ejs' na pasta 'views' para responder um olá persnalizado ao visitante.
 
 ```html
 <!DOCTYPE html>
