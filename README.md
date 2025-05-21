@@ -33,7 +33,7 @@ No roteador importar o controlador.
 const operacaoController = require('../controllers/operacao-controller')
 ```
 
-Em seguida, criar função de roteamento.
+Em seguida, criar função de roteamento no roteador.
 
 ```javascript
 router.post('/salvar_operacao', operacaoController.save)
