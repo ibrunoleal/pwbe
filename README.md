@@ -33,8 +33,8 @@ npm init --yes
 npm install express
 ```
 
-3. Acessar [Express](https://expressjs.com/) para código de hello world e documentação.
-Copiar o código de "hello world" do site e colar no arquivo index.js
+3. Criar o arquivo 'index.js' no nível raiz do projeto e acessar [Express](https://expressjs.com/) para código de hello world e documentação.
+Copiar o código de "hello world" do site e colar no arquivo 'index.js'.
 
 ```javascript
 const express = require('express')
