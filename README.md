@@ -32,7 +32,8 @@ Exemplo: para inserir (de maneira externa) o arquivo 'hello.css' localizado em "
 
 ## 6 - Template Layouts
 
-Instalando a dependência.
+Instalando a dependência express-ejs-layouts.
+        Obs.: na época deste tutorial, versão '2.5.1'.
 
 ```bash
 npm install express-ejs-layouts
@@ -42,9 +43,15 @@ Importar e definir a utilização no arquivo 'index.js'
 
 ```javascript
 const expressLayouts = require('express-ejs-layouts')
-``´
+```
 
-Antes de começar, vamos remover os seguintes arquivos para começar um novo exemplo com um projeto "zerado":
+Em seguida definir a sua utilização no mesmo arquivo ('index.js')
+
+```javascript
+app.use(expressLayouts)
+```
+
+Antes de começar a criar o layout, vamos remover os seguintes arquivos para começar um novo exemplo com um projeto "zerado":
 
 <div>
     <ul>
@@ -84,9 +91,9 @@ tutorial_pwbe
 
 3. Reorganizando as views.
 
-Criar na pasta views, o arquivo "layout.ejs".
+Criar na pasta views, o arquivo 'layout.ejs'.
 
-Criar na pasta views, a subpasta "partials" e dentro desta pasta criar os seguintes arquivos:
+Criar na pasta 'views', a subpasta 'partials' e dentro desta pasta criar os seguintes arquivos:
 
 <div>
     <ul>
@@ -95,7 +102,7 @@ Criar na pasta views, a subpasta "partials" e dentro desta pasta criar os seguin
     </ul>
 </div>
 
-Criar na pasta views (que agora deve estar vazia), a subpasta "pages". A partir daqui vamos criar todos os templates de views organizados nesta pasta.
+Criar na pasta 'views', a subpasta 'pages'. A partir daqui vamos criar todos os templates de views organizados nesta pasta.
 
 1. Criar código a ser reaproveitado no footer. Segue um exemplo abaixo.
 
@@ -110,7 +117,7 @@ Criar na pasta views (que agora deve estar vazia), a subpasta "pages". A partir 
 </div>
 ```
 
-Criar arquivo "footer-style.css" para o footer (na pasta stylesheets).
+Criar arquivo 'footer-style.css' para estilizar o footer (na pasta 'stylesheets').
 
 ```css
 .footerDiv {
@@ -127,7 +134,7 @@ Criar arquivo "footer-style.css" para o footer (na pasta stylesheets).
 }
 ```
 
-5. Criar código a ser reaproveitado no header, como, por exemplo, uma navbar.
+5. Criar código a ser reaproveitado como header em 'header.ejs', como, por exemplo, uma navbar.
 
 ```html
 <ul>
@@ -137,7 +144,7 @@ Criar arquivo "footer-style.css" para o footer (na pasta stylesheets).
 </ul>
 ```
 
-Criar arquivo "navbar-style.css" para o header (na pasta stylesheets).
+Criar arquivo 'navbar-style.css' para estilizar o header (na pasta 'stylesheets').
 
 ```css
 /* codigo de w3schools.com */
@@ -170,7 +177,7 @@ li a:hover:not(.active) {
 }
 ```
 
-6. Adicionar a inclusão dos arquivos que serão reaproveitados de header e footer no arquivo "layout.ejs", bem como difinir o local de conteúdo das views (body). E, ainda, não esquecer de adicionar a ligação com os arquivos de estilos do header e footer.
+6. Adicionar a inclusão dos arquivos que serão reaproveitados de header e footer no arquivo 'layout.ejs', bem como difinir o local de conteúdo das views (body). E, ainda, não esquecer de adicionar a ligação com os arquivos de estilos do header e footer.
 
 ```html
 <!DOCTYPE html>
@@ -201,9 +208,9 @@ li a:hover:not(.active) {
 
 7. Criando um template para a Home do projeto.
 
-Obs.: percebam que na tag título de "layout.ejs" deixamos uma parte para ser definida dinamicamente. O que pode ser feito tanto no tratamento da requisição ao passar como argumento ou como declaração de variável dentro do próprio template ejs.
+Obs.: percebam que na tag título de 'layout.ejs' deixamos uma parte para ser definida dinamicamente. Isso pode ser feito, tanto no tratamento da requisição ao passar como argumento, ou como declaração de variável dentro do próprio template ejs.
 
-Criar o arquivo "home.ejs" dentro da pasta "pages".
+Criar o arquivo 'home.ejs' dentro da pasta 'pages'.
 
 ```html
 <div>
@@ -299,7 +306,7 @@ th {
 }
 ```
 
-Criar o arquivo de estilo para personalizar componentes. Nesse caso vamos adicionar estilização dos links como botões.
+Criar o arquivo 'component-style.css' para personalizar componentes. Nesse caso vamos adicionar estilização dos links como botões.
 
 ```css
 .botao-link {
@@ -469,7 +476,7 @@ input[type=submit]:hover {
 
 12. Criando as rotas.
 
-No arquivo de roteamento 'router.js' definir a requisição para a raiz do projeto para renderizar o template "home".
+No arquivo de roteamento 'router.js' definir a requisição para a raiz do projeto para renderizar o template 'home'.
 Obs.: o valor da variável 'title' deve ser definido via passagem pelo contexto (comom no exemplo abaixo) ou declaração de variável no próprio template (<% title = 'Home' %>).
 Aproveitando a passagem por contexto, vamos passar, ainda, uma variável para indicar qual o menu do header ativo (Home ou Operações).
 
