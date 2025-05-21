@@ -233,7 +233,7 @@ Criar o template 'operacoes.ejs' dentro da pasta 'pages'.
             <th>Tipo de operação</th>
             <th>Quantidade</th>
             <th>Preço unitário</th>
-            <th>Valor Bruno</th>
+            <th>Valor Bruto</th>
             <th>Taxas B3</th>
             <th>Valor líquido</th>
         </thead>
