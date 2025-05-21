@@ -27,7 +27,7 @@ Executar os comandos de terminal:
 npm init --yes
 ```
 
-2. instalação framework express.
+2. Instalação framework express.
 
    Obs.: Na época deste tutorial versão '5.1.0'.
 
