@@ -119,7 +119,7 @@ Operacao.prototype.validate = function () {
 			quantidade: quantidade,
 			preco: preco,
 			valorBruno: valorBruto,
-			taxaB3: taxasB3,
+			taxaB3: taxaB3,
 			valorLiquido: valorLiquido
 		}
 		this.data = validatedData;
