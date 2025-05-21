@@ -29,6 +29,8 @@ npm init --yes
 
 2. instalação framework express.
 
+   Obs.: Na época deste tutorial versão '5.1.0'.
+
 ```bash
 npm install express
 ```
@@ -51,8 +53,10 @@ app.listen(port, () => {
 
 ```
 
-4. Instação e configuração do Nodemon
-Evitar ter que ficar parando e reiniciando o servidor a cada alteração no projeto.
+4. Instação e configuração do Nodemon.
+Evita ter que ficar parando e reiniciando o servidor a cada alteração no projeto.
+
+  Obs.: na época deste tutorial versão '3.1.10'.
 
 ```bash
 npm install nodemon
