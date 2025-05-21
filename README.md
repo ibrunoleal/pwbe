@@ -23,7 +23,7 @@ exports.save = function (req, res) {
 exports.listaDeOperacoes = listaDeOperacoes
 ```
 
-Aqui podemos perceber pela impressão no log (console) que os dados estão como string e não nos tipos desejados como int para a quantidade ou float para preço. Além disso não estamos calculando as  propriedades derivadas (valor bruto, taxas e valor líquido) e nem fazendo nenhuma verificação de validade dos dados. Porém, deixaremos para tratar isso no devido lugar que é no modelo.
+Aqui iremos perceber, mais na frente, pela impressão no log (console), que os dados estão como string e não nos tipos desejados como int para a quantidade ou float para preço. Além disso não estamos calculando as  propriedades derivadas (valor bruto, taxas e valor líquido) e nem fazendo nenhuma verificação de validade dos dados. Porém, deixaremos para tratar isso no devido lugar que é no modelo.
 
 4. Criar a função de roteamento para a função de salvar a operação.
 
