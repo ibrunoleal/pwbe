@@ -34,6 +34,8 @@ module.exports = Operacao;
 const Operacao = require('../models/operacao')
 ```
 
+	Obs.: os métodos do modelo são criados separdamente com o prototype para tentar obter maior otimização de memória e flexibilidade de herança para subclasses (pesquisar sobre classes x prototypes em javascript).
+
 3. Alterar a função do controlador que salva uma operação para utilizar o modelo.
 
 ```javascript
