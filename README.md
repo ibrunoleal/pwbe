@@ -118,7 +118,7 @@ Operacao.prototype.validate = function () {
 			tipoDeOperacao: tipoDeOperacao,
 			quantidade: quantidade,
 			preco: preco,
-			valorBruno: valorBruto,
+			valorBruto: valorBruto,
 			taxaB3: taxaB3,
 			valorLiquido: valorLiquido
 		}
