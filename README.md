@@ -71,7 +71,7 @@ router.post('/salvar_operacao', operacaoController.save)
                 <%= operacao.preco %>
             </td>
             <td>
-                <%= operacao.valorBruno %>
+                <%= operacao.valorBruto %>
             </td>
             <td>
                 <%= operacao.taxaB3 %>
